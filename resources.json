@@ -2,7 +2,7 @@
   "schema_version": 2,
   "source": "https://github.com/AbdelStark/awesome-typesafe-jev/blob/main/README.md",
   "last_updated": "2026-09-23",
-  "total_resources": 228,
+  "total_resources": 230,
   "notice": "Community entries are independent unless their source says otherwise. Inclusion is not endorsement.",
   "categories": [
     {
@@ -58,6 +58,12 @@
           "url": "https://github.com/formulahendry/jev-acp",
           "description_markdown": "Standalone ACP agent for Jev Choice, Score, and Noul decisions, with guided input, reusable templates, and probability displays; requires a TypeSafe API key and sends decision inputs to TypeSafe.",
           "permalink": "/projects/gh-formulahendry-jev-acp/"
+        },
+        {
+          "name": "Jev-Switch",
+          "url": "https://github.com/ARCJ137442/jev-switch",
+          "description_markdown": "Rust gateway with a React console and Windows Tauri app that serves a Jev-shaped `/v1/systemone` endpoint and routes each request through an editable graph of upstream routes with failover; v0.1.0 adapters cover only Vercel AI Gateway and Laya, not TypeSafe's own API, request state goes to the selected upstream, and the README is in Chinese.",
+          "permalink": "/projects/gh-arcj137442-jev-switch/"
         },
         {
           "name": "Jevelry",
@@ -116,7 +122,7 @@
         {
           "name": "NeuroLink",
           "url": "https://github.com/juspay/neurolink",
-          "description_markdown": "TypeScript SDK that exposes Jev as a third inference type alongside `generate` and `stream`, declared per provider through an `inferenceKinds` field rather than inferred from behaviour, and consumes it internally for model routing, context compaction, MCP tool selection, and RAG planning; every internal caller uses a fail-open wrapper that returns `null` on any failure, so with no key configured the library behaves exactly as it did before, and it is not affiliated with TypeSafe AI.",
+          "description_markdown": "TypeScript SDK that exposes `decide` as a third inference type alongside `generate` and `stream`, backed by TypeSafe's Jev or the open-weights Laya, declared per provider through an `inferenceKinds` field rather than inferred from behaviour, and consumes it internally for model routing, context compaction, MCP tool selection, and RAG planning; every internal caller uses a fail-open wrapper that returns `null` on any failure, so with no key configured the library behaves exactly as it did before, and it is not affiliated with TypeSafe AI or Convai Innovations.",
           "permalink": "/projects/gh-juspay-neurolink/"
         },
         {
@@ -262,7 +268,7 @@
         {
           "name": "Augustus",
           "url": "https://github.com/24601/Augustus",
-          "description_markdown": "Independent agent skill for building and improving decision-model systems, with composition rules, evaluation workflows, bounded prompt/program optimization, and an offline paired-outcome evaluator; TypeSafe Jev is the default hosted exemplar.",
+          "description_markdown": "Independent `augustus` and `augustus-train` agent skills for placing and building application-specific decision models: primitive, base-model, and method selection, data assembly, fitting, export/reload, bounded improvement, and offline evaluation. TypeSafe Jev is the default hosted exemplar, not a model this project reproduces, and rules-only or no-training outcomes are valid results.",
           "permalink": "/projects/gh-24601-augustus/"
         },
         {
@@ -804,12 +810,6 @@
           "permalink": "/projects/site-boringtoolskit-com-blog-seo-audit-cost-2026/"
         },
         {
-          "name": "Crowdcheck",
-          "url": "https://crowdcheck-ai.vercel.app/",
-          "description_markdown": "Live demo that tests a 144-character post on 10,000 persistent synthetic personas: code decides who sees it, and batched Jev calls return read, like/dislike, agreement, repost, follow, and block probabilities per persona group; posting requires Google sign-in, post text is sent to Jev through Vercel AI Gateway, and the simulated reactions are not a forecast of real audience behavior.",
-          "permalink": "/projects/site-crowdcheck-ai-vercel-app/"
-        },
-        {
           "name": "discoprint",
           "url": "https://github.com/lirantal/discoprint",
           "description_markdown": "CLI that fetches an artist's discography and available lyrics, asks Jev five typed questions per song about theme, mood, complexity, explicit content, and perspective, then draws a terminal dashboard; full lyrics go to TypeSafe, missing lyrics are skipped, and the classifications are model judgments rather than verified music metadata.",
@@ -998,6 +998,12 @@
           "permalink": "/projects/site-jevchess-com/"
         },
         {
+          "name": "Jev Driver",
+          "url": "https://github.com/reinhard-z/vision-jev",
+          "description_markdown": "Browser driving demo where Florence-2 captions each image you drop on the road locally, and a Cloudflare Worker sends only the caption and its lane or sidewalk to Jev, asking three Choice questions (action, category, speed limit) whose answer drives the car with no rule table overriding it, and code falls back to fixed per-zone behavior only when captioning or the request fails; live at [drive.mrza.ch](https://drive.mrza.ch), with a ~357 MB first-visit model download and WebGPU recommended.",
+          "permalink": "/projects/gh-reinhard-z-vision-jev/"
+        },
+        {
           "name": "Jev Drone",
           "url": "https://github.com/RomanSlack/jev-drone",
           "description_markdown": "MuJoCo quadrotor stack that keeps control and safety in code while using Jev for slower tactical judgments.",
@@ -1130,6 +1136,12 @@
           "url": "https://zc277584121.github.io/rag/2026/09/22/jev-search-deep-evaluation.html",
           "description_markdown": "Engineering report on search stopping, coding-memory reranking, and multi-hop relationship selection in DeepSearcher, MemSearch, and Vector Graph RAG, linking implementation and evaluation artifacts; some datasets are private, some comparisons use different sample counts, and the animated speed illustration is simulated.",
           "permalink": "/projects/site-zc277584121-github-io-rag-2026-09-22-jev-search-deep-evaluation-html/"
+        },
+        {
+          "name": "Jev in the Wild",
+          "url": "https://arxiv.org/abs/2609.30216",
+          "description_markdown": "Data-driven survey of 2,170 public GitHub Jev projects, mapping early ecosystem growth, application domains, and decision-use patterns; it measures repository activity rather than production use.",
+          "permalink": "/projects/site-arxiv-org-abs-2609-30216/"
         },
         {
           "name": "Jev Judge vs Dimension Scores",
