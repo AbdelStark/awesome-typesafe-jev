@@ -541,6 +541,7 @@ Independent tests and open decision-model alternatives provide methods and resul
 Short demos and builder reports show what was tried and observed. Treat reported numbers as starting points for your own tests.
 
 - [Browser Use + Jev](https://x.com/gregpr07/status/2100411066966749359) — Gregor Zunic's real-time flight-search demo and short description of the dynamic DOM action space.
+- [Free JEV API Guide](https://jevapi.io/) — Independent first-request walkthrough with runnable examples of typed JEV decisions; example calls send supplied state through BeatAPI, while the guide itself runs no inference.
 - [Internal classifier field note](https://x.com/identityTorn/status/2100475121324728615) — A builder's early matched-precision comparison against a private fine-tuned Qwen classifier; useful anecdotal evidence, not a reproducible benchmark.
 - [Jev by Example](https://github.com/ReallyArtificial/jev-by-example) — Ten MIT-licensed JavaScript exercises for decisions between agent steps, pairing Jev Choice, Score, or Noul questions with explicit application policies, hand-authored response fixtures, and simple baselines; offline demos need no key, while opt-in live runs send case state to TypeSafe, and the project has not yet verified live Jev outcomes or accuracy.
 - [Jev Typewriter launch post](https://x.com/stevekrouse/status/2100287368221659289) — Steve Krouse's playable 16-judgment demo and video.
