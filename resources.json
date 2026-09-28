@@ -2,7 +2,7 @@
   "schema_version": 2,
   "source": "https://github.com/AbdelStark/awesome-typesafe-jev/blob/main/README.md",
   "last_updated": "2026-09-23",
-  "total_resources": 232,
+  "total_resources": 240,
   "notice": "Community entries are independent unless their source says otherwise. Inclusion is not endorsement.",
   "categories": [
     {
@@ -64,6 +64,12 @@
           "url": "https://github.com/ARCJ137442/jev-switch",
           "description_markdown": "Rust gateway with a React console and Windows Tauri app that serves a Jev-shaped `/v1/systemone` endpoint and routes each request through an editable graph of upstream routes with failover; v0.1.0 adapters cover only Vercel AI Gateway and Laya, not TypeSafe's own API, request state goes to the selected upstream, and the README is in Chinese.",
           "permalink": "/projects/gh-arcj137442-jev-switch/"
+        },
+        {
+          "name": "jev.zig",
+          "url": "https://github.com/jakeknowlton/jev.zig",
+          "description_markdown": "Zig client with compile-time typed answers, retries with per-attempt timeouts, and diagnostics. Questions are fixed at compile time.",
+          "permalink": "/projects/gh-jakeknowlton-jev-zig/"
         },
         {
           "name": "Jevelry",
@@ -284,6 +290,12 @@
           "permalink": "/projects/gh-abdelstark-bicameral/"
         },
         {
+          "name": "Building with TypeSafe Jev",
+          "url": "https://github.com/aaddrick/building-with-typesafe-jev",
+          "description_markdown": "Unofficial agent skill for Claude Code, Codex, and Antigravity CLI that holds the Choice, Score, and Noul API shapes, cookbook thresholds, community failure modes, and 150+ community projects sorted by implementation shape, each with a code sketch; it is Markdown only and sends nothing itself, but it is a 2026-09-25 snapshot of the docs and tells the agent the live docs win on any conflict.",
+          "permalink": "/projects/gh-aaddrick-building-with-typesafe-jev/"
+        },
+        {
           "name": "Canny",
           "url": "https://github.com/qkal/Canny",
           "description_markdown": "Claude Code and Codex hooks that record edits and checks in an append-only ledger, flag a \"done\" claim without a passing check after the last code edit, and use optional Jev Noul judgments for advisory rule checks or to recognize a non-completion message; its default gate allows a repeated stop after warning, the author has not measured project-wide quality gains, and enabling Jev sends clipped diffs, project rules, and final messages to TypeSafe.",
@@ -462,6 +474,12 @@
           "url": "https://github.com/190ibrahim/jev-graphify",
           "description_markdown": "Python CLI that names and classifies [graphify](https://github.com/Graphify-Labs/graphify) code-graph communities by having Jev pick from candidate names built from the graph, then routes a developer question to the community and symbol to read first; sends symbol names, file paths and short code comments (not source bodies) to TypeSafe, and has only been tested on one codebase.",
           "permalink": "/projects/gh-190ibrahim-jev-graphify/"
+        },
+        {
+          "name": "jev-lint",
+          "url": "https://github.com/ckorhonen/jev-lint",
+          "description_markdown": "MIT-licensed fuzzy linter that uses Jev to flag team-rule violations as Claude Code and Codex edit, with configurable rules and local thresholds; added code goes to TypeSafe and API errors fail open.",
+          "permalink": "/projects/gh-ckorhonen-jev-lint/"
         },
         {
           "name": "jev-logtriage",
@@ -692,6 +710,12 @@
           "permalink": "/projects/gh-ruban-24-switchboard/"
         },
         {
+          "name": "toolgate",
+          "url": "https://github.com/RiskAverseTech/toolgate",
+          "description_markdown": "MIT TypeScript tool-call firewall for Claude Code (PreToolUse hook) and MCP servers (stdio proxy): static rules first, then seven Jev Noul risk questions per action mapped to allow, ask, or deny by policy thresholds, with an action ledger, key-aware redaction, and a local JSONL audit log. Sends redacted tool input, cwd, and recent prompts to TypeSafe, OpenRouter, or Vercel AI Gateway (owner's key); in one author's 1,369-decision window on 0.9.1, blind second labeling of 150 sampled allows found no permissive misses, while 21% of decisions required an ask, mostly from one axis. Version 0.11.0 addresses that axis but has not been re-measured. Heuristic redaction and model judgments are defense in depth, not a sandbox.",
+          "permalink": "/projects/gh-riskaversetech-toolgate/"
+        },
+        {
           "name": "TypeSafe MCP",
           "url": "https://github.com/itsmostafa/typesafe-mcp",
           "description_markdown": "Go CLI and single-binary MCP server with setup for Claude Desktop, Claude Code, and Codex.",
@@ -904,6 +928,12 @@
           "url": "https://github.com/kylemclaren/jevpdf",
           "description_markdown": "Browser PDF viewer for finding passages when you do not know the exact words: pdf.js extracts lines locally, each line gets one Jev Noul on whether it answers the query (batched with the page text as shared state), and lines above a code-owned threshold light up ranked by probability; only extracted text is sent to TypeSafe, never the PDF, and the API key stays behind a server-side proxy.",
           "permalink": "/projects/gh-kylemclaren-jevpdf/"
+        },
+        {
+          "name": "JevSpan",
+          "url": "https://github.com/lzq-0529/jev-span",
+          "description_markdown": "Zero-shot named entity recognition for Chinese and English text: code splits the text at punctuation and enumerates candidate windows with exact character offsets, Jev answers Choice questions that nominate, verify, and fix the boundary of each entity, and every result keeps its probability and a decision trace (CLI, Python library, and local web UI; MIT). Its authors report 73.7 average strict F1 on 200-sentence samples of 12 public NER benchmarks with jev-1.13.0, with aggregate results committed; input text is sent to TypeSafe, and an entity that no candidate window covers cannot be found.",
+          "permalink": "/projects/gh-lzq-0529-jev-span/"
         },
         {
           "name": "Jevtown",
@@ -1288,6 +1318,12 @@
           "permalink": "/projects/gh-tianyucodings-nanojev/"
         },
         {
+          "name": "OneJev",
+          "url": "https://github.com/OmniJev/OneJev",
+          "description_markdown": "Apache-2.0 open multimodal System One models in four sizes (0.8B to 27B, plus a 27B FP8 build) that answer `choice`, `score`, and `noul` about screenshots, photos, video, and text in one forward pass through a `/v1/systemone`-compatible server; independent of hosted Jev.",
+          "permalink": "/projects/gh-omnijev-onejev/"
+        },
+        {
           "name": "Open Alternative to Jev",
           "url": "https://github.com/ikermoel/open-alternative-jev",
           "description_markdown": "Apache-licensed Python library that reads option-token probabilities from open models through Transformers or vLLM, with packed and separate question modes, temperature scaling, benchmark scripts, and raw result files; its measurements compare modes of the same open model rather than Jev, packed answers can change with question order, and the package is not a drop-in System One API server.",
@@ -1316,6 +1352,12 @@
           "url": "https://github.com/Rizzo-AI-Academy/rizzo-flow",
           "description_markdown": "Local, open-model decision server that reads answer-token probabilities instead of generating text, with a Jev-compatible Choice, Score, and Noul API plus its own numeric primitive. Its authors explicitly make no quality-parity claim with Jev; probabilities need calibration on the user's own data.",
           "permalink": "/projects/gh-rizzo-ai-academy-rizzo-flow/"
+        },
+        {
+          "name": "RSI-Jev",
+          "url": "https://github.com/Shanghua-Gao/RSI-Jev",
+          "description_markdown": "Jev-like 2B open model trained by a recursively self-improving AI research system, with published version notes including failed experiments (MIT code, Apache-2.0 weights); it returns `choice`, `score`, and `noul` probabilities through a `/v1/systemone`-compatible server. Its authors report 0.791 on typed-decisions after training on that benchmark's train split and 0.774 on 873 held-out scienthoon tickets; MMLU-Pro remains a weakness at 0.383 on a 1,000-question subset.",
+          "permalink": "/projects/gh-shanghua-gao-rsi-jev/"
         },
         {
           "name": "ruling",
@@ -1378,6 +1420,12 @@
           "url": "https://x.com/gregpr07/status/2100411066966749359",
           "description_markdown": "Gregor Zunic's real-time flight-search demo and short description of the dynamic DOM action space.",
           "permalink": "/projects/site-x-com-gregpr07-status-2100411066966749359/"
+        },
+        {
+          "name": "Free JEV API Guide",
+          "url": "https://jevapi.io/",
+          "description_markdown": "Independent first-request walkthrough with runnable examples of typed JEV decisions; example calls send supplied state through BeatAPI, while the guide itself runs no inference.",
+          "permalink": "/projects/site-jevapi-io/"
         },
         {
           "name": "Internal classifier field note",

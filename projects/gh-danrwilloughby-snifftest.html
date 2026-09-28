@@ -19,8 +19,8 @@ related:
     permalink: "/projects/gh-ruban-24-switchboard/"
     description: "Local Claude Code and Codex wrapper that assesses a new conversation's task with Jev, applies local confidence policy to choose the model and reasoning effort, and pins that route through follow-ups, tool calls, and resume to avoid unnecessary prompt-cache disruption. It preserves native authentication and sends task text to the configured TypeSafe, Vercel, or OpenRouter Jev endpoint; raw prompt history is stored only when explicitly enabled."
     image: "/assets/cards/gh-ruban-24-switchboard.png"
-  - name: "TypeSafe MCP"
-    permalink: "/projects/gh-itsmostafa-typesafe-mcp/"
-    description: "Go CLI and single-binary MCP server with setup for Claude Desktop, Claude Code, and Codex."
-    image: "/assets/cards/gh-itsmostafa-typesafe-mcp.png"
+  - name: "toolgate"
+    permalink: "/projects/gh-riskaversetech-toolgate/"
+    description: "MIT TypeScript tool-call firewall for Claude Code (PreToolUse hook) and MCP servers (stdio proxy): static rules first, then seven Jev Noul risk questions per action mapped to allow, ask, or deny by policy thresholds, with an action ledger, key-aware redaction, and a local JSONL audit log. Sends redacted tool input, cwd, and recent prompts to TypeSafe, OpenRouter, or Vercel AI Gateway (owner's key); in one author's 1,369-decision window on 0.9.1, blind second labeling of 150 sampled allows found no permissive misses, while 21% of decisions required an ask, mostly from one axis. Version 0.11.0 addresses that axis but has not been re-measured. Heuristic redaction and model judgments are defense in depth, not a sandbox."
+    image: "/assets/cards/gh-riskaversetech-toolgate.png"
 ---
