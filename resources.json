@@ -2,7 +2,7 @@
   "schema_version": 2,
   "source": "https://github.com/AbdelStark/awesome-typesafe-jev/blob/main/README.md",
   "last_updated": "2026-09-23",
-  "total_resources": 240,
+  "total_resources": 246,
   "notice": "Community entries are independent unless their source says otherwise. Inclusion is not endorsement.",
   "categories": [
     {
@@ -984,10 +984,22 @@
           "permalink": "/projects/gh-arpit-khandelwal-jev-linkedin-slop-filter/"
         },
         {
+          "name": "sortwell",
+          "url": "https://github.com/dharun-cohere/jev-sortwell",
+          "description_markdown": "MCP server and Claude Code plugin that files each captured note, link, or meeting line: one Jev request answers Choice questions for kind, project, and next action plus a Noul for duplicates, and code applies fixed thresholds (0.45 to route to a project, 0.70 plus a specific matching item to call a duplicate) before appending the text verbatim to local JSONL files that are never rewritten. Item text, project scopes, and recent items go to TypeSafe; the author's own `claude plugin eval` found agents did not call `capture` unprompted, so capture needs an explicit request while the session-start shortlist hook always runs; MIT.",
+          "permalink": "/projects/gh-dharun-cohere-jev-sortwell/"
+        },
+        {
           "name": "Tax Document Classifier",
           "url": "https://github.com/kyotofin/tax-doc-classifier",
           "description_markdown": "Apache-licensed, text-only classifier for 261 federal tax forms that sends PDF text to Jev; the author reports no wrong labels on two test corpora but 38 low-confidence pages, without committed page-level results.",
           "permalink": "/projects/gh-kyotofin-tax-doc-classifier/"
+        },
+        {
+          "name": "TypeSafe Conversation",
+          "url": "https://github.com/the-sof/home-assistant-typesafe-conversation-agent",
+          "description_markdown": "Experimental Home Assistant Assist conversation agent: each command sends the utterance and every Assist-exposed entity (names, areas, current states) to Jev in one call of about twenty typed questions, and code routes on the answers, acting only when the chosen answer is confident and clear of the runner-up; it asks before unlocking or disarming when Jev's separate risk score crosses a configured threshold, so this is not a deterministic safety gate. An optional Ollama or OpenAI-compatible LLM handles multi-part requests and general questions; the routing thresholds are fitted to a small set of recorded answers. MIT licensed.",
+          "permalink": "/projects/gh-the-sof-home-assistant-typesafe-conversation-agent/"
         },
         {
           "name": "TypeSafe Typewriter",
@@ -1005,15 +1017,21 @@
       "resources": [
         {
           "name": "1 Million Emojis",
-          "url": "https://chriswijnia.com/experiments/emoji",
+          "url": "https://chriswijnia.com/lab/emoji",
           "description_markdown": "Shared 1000 × 1000 emoji canvas, live for everyone: visitors paint strokes, and after each one Jev chooses a square next to it and its emoji as one Choice over named (square, emoji) pairs, its pick sampled from its probabilities ([source](https://github.com/cwdx/1-million-emojis)).",
-          "permalink": "/projects/site-chriswijnia-com-experiments-emoji/"
+          "permalink": "/projects/site-chriswijnia-com-lab-emoji/"
         },
         {
           "name": "Chess with Jev",
           "url": "https://chriswijnia.com/experiments/chess",
           "description_markdown": "Browser chess and Chess960 where code works out every legal move's facts (exchanges, mates, threats) and Jev picks one per turn as a single Choice, with its candidates drawn as arrows ([source](https://github.com/cwdx/chess-with-jev)).",
           "permalink": "/projects/site-chriswijnia-com-experiments-chess/"
+        },
+        {
+          "name": "EmbodiedJev",
+          "url": "https://github.com/FBddcz/embodied-jev",
+          "description_markdown": "MuJoCo decision workbench for a Franka Panda arm that compares TypeSafe Jev candidate decisions against rule baselines and other models across pick, place, and obstacle tasks; structured simulator state goes to TypeSafe when Jev is selected, and simulated task completion is not physical-robot reliability.",
+          "permalink": "/projects/gh-fbddcz-embodied-jev/"
         },
         {
           "name": "HEIST//ONE",
@@ -1124,6 +1142,12 @@
           "url": "https://huggingface.co/Hanno-Labs/bosun-v3.1-1.7b",
           "description_markdown": "Apache-2.0 open-weight Qwen3 decision model family with released 0.6B and 1.7B weights and shipped `choice`, `score`, and `noul` inference; a separate Jev-style alternative, not hosted Jev.",
           "permalink": "/projects/site-huggingface-co-hanno-labs-bosun-v3-1-1-7b/"
+        },
+        {
+          "name": "Confident Where People Disagree",
+          "url": "https://github.com/GautamTalksDev/jevbench",
+          "description_markdown": "Preregistered, bias-corrected test of whether jev-1.13.0 lowers its confidence where people disagree, scoring Choice and Noul answers against the share of ChaosNLI's 100 annotators who chose the model's label on 750 low- and 750 high-disagreement items, with the [paper](https://zenodo.org/records/22971492) and [preregistration](https://zenodo.org/records/22971413) on Zenodo; Choice was close to calibrated on the agreed items but overconfident on the contested ones (bias-corrected ECE gap 0.264), Noul's gap was inconclusive, and only aggregate results are committed, with ChaosNLI text fetched separately.",
+          "permalink": "/projects/gh-gautamtalksdev-jevbench/"
         },
         {
           "name": "Convex Decision Evals",
@@ -1384,6 +1408,12 @@
           "permalink": "/projects/gh-bladedevoff-stuntd/"
         },
         {
+          "name": "TetraJev",
+          "url": "https://github.com/FeiLiuEM/tetrajev",
+          "description_markdown": "MIT-licensed, locally-deployed decision layer for complex bounded decisions: two frozen open-weight readers, four readings (letter + per-candidate yes/no) fused fit-free and routed by agreement into auto-release vs human review; eight decision suites and the RAG reranking pass benchmarked — including DecisionBench's 35 real-world task categories — with coverage–accuracy curves. It does not call the TypeSafe API, and its equal-weight fusion still trails the strongest single reading at some high-precision operating points.",
+          "permalink": "/projects/gh-feiliuem-tetrajev/"
+        },
+        {
           "name": "TypeSafe AI Benchmark",
           "url": "https://github.com/iammrduncan/typesafe-ai-benchmark",
           "description_markdown": "Side-by-side Jev and Qwen-on-Cerebras comparison with raw exports, cost accounting, methodology, and task-specific limitations.",
@@ -1400,6 +1430,12 @@
           "url": "https://github.com/wfzyx/von",
           "description_markdown": "Open local Choice, Noul, and Score model with public weights, training code, and a System One-shaped API. Benchmark comparisons are author-reported: its README gives a 91.23% accuracy headline without a matching result artifact in the repo, while its 49-task table reports 71.5% macro accuracy.",
           "permalink": "/projects/gh-wfzyx-von/"
+        },
+        {
+          "name": "WebJev",
+          "url": "https://github.com/lexmount/WebJev",
+          "description_markdown": "Apache-2.0 open-weight decision model for browser agents (a Qwen3.5-35B-A3B fine-tune) that answers Choice, Noul, and Score through a Jev-compatible `/v1/systemone` API and ships its training recipe, [live-web training data](https://huggingface.co/datasets/Lexmount/WebJev), and a deterministic-verifier evaluation on 125 hand-picked real-website tasks. Its authors report 47/122 gradable successes versus 20/120 for Jev 1.13 inside the same agent, and 83.72% versus 84.70% mean accuracy on eight single-step typed-decision benchmarks; the live-web runs happened on different days and had different gradable subsets. It is a separate Jev-style alternative, not hosted Jev: self-hosting the [weights](https://huggingface.co/Lexmount/WebJev-35B-A3B) needs one 80 GB GPU, and page observations go to the configured decision endpoint and text model.",
+          "permalink": "/projects/gh-lexmount-webjev/"
         },
         {
           "name": "When a Judgment Layer’s Self-Reported Fields Lie",
