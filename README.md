@@ -280,6 +280,7 @@ For a comparison across decision models, [JevBench's method](https://github.com/
 
 ## Community projects
 
+- [awesome-jev-prompts](https://github.com/vicfei/awesome-jev-prompts) — 43 field-tested Jev question patterns (Choice/Score/Noul) with templates, thresholds, and failure modes, plus 10 anti-patterns. CC0, bilingual EN/中文.
 Community projects are independent unless their repository says otherwise. Read the code, licenses, data-handling notes, and evaluation caveats before using them in a consequential system.
 
 Browse a focused page: [Client libraries and integrations](https://abdelstark.github.io/awesome-typesafe-jev/categories/client-libraries-and-integrations/) · [Agent and developer tooling](https://abdelstark.github.io/awesome-typesafe-jev/categories/agent-and-developer-tooling/) · [Browser agents](https://abdelstark.github.io/awesome-typesafe-jev/categories/browser-agents/) · [Applications and workflows](https://abdelstark.github.io/awesome-typesafe-jev/categories/applications-and-workflows/) · [Games and robotics](https://abdelstark.github.io/awesome-typesafe-jev/categories/games-and-robotics/) · [Evaluations and independent research](https://abdelstark.github.io/awesome-typesafe-jev/categories/evaluations-and-independent-research/) · [Showcases and field notes](https://abdelstark.github.io/awesome-typesafe-jev/categories/showcases-and-field-notes/).
