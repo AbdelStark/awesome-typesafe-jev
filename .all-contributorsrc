@@ -1138,6 +1138,33 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "vicfei",
+      "name": "Fei.Chen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4058491?v=4",
+      "profile": "https://github.com/vicfei",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Xiaooolong",
+      "name": "Xiaooolong",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116993013?v=4",
+      "profile": "https://github.com/Xiaooolong",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "devnacho",
+      "name": "Ignacio Gutierrez",
+      "avatar_url": "https://avatars.githubusercontent.com/u/623766?v=4",
+      "profile": "http://devnacho.com/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-9de3bc.svg?style=flat-square)](#contributors)",

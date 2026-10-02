@@ -2,7 +2,7 @@
   "schema_version": 2,
   "source": "https://github.com/AbdelStark/awesome-typesafe-jev/blob/main/README.md",
   "last_updated": "2026-09-23",
-  "total_resources": 246,
+  "total_resources": 250,
   "notice": "Community entries are independent unless their source says otherwise. Inclusion is not endorsement.",
   "categories": [
     {
@@ -802,10 +802,22 @@
           "permalink": "/projects/gh-valentynkit-jev-skip/"
         },
         {
+          "name": "Jevvie",
+          "url": "https://chriswijnia.com/lab/jevvie",
+          "description_markdown": "Page companion: the page offers its actions as WebMCP tools, and one Jev `Choice` picks the action a visitor's request means (with a `Choice` per argument asked alongside), asking back when the top two are close; a voxel character then hops to the button and does it ([source](https://github.com/cwdx/jevvie)). The visitor's request and offered tool descriptions go to Vercel AI Gateway or TypeSafe for the judgment.",
+          "permalink": "/projects/site-chriswijnia-com-lab-jevvie/"
+        },
+        {
           "name": "PlotVeil",
           "url": "https://github.com/Dearest/plotveil",
           "description_markdown": "Chrome extension (Manifest V3) that covers a YouTube comment while one Jev Noul question decides whether it reveals a concrete plot event, fate, ending or result of the video being watched or of any other title the user chose to protect; the typed question lives in the extension, application code owns the 0.5 / 0.7 / 0.85 threshold, and a failed or quota-rejected check leaves the comment covered rather than revealed. Requests go through the author's Cloudflare Worker, which forwards comment text, video title and channel but not the anonymous install ID; the committed evaluation is a 10-sample hand-written regression set across English, Chinese, Japanese and prompt injection, not a production accuracy measurement. [Install PlotVeil](https://plotveil.app/install).",
           "permalink": "/projects/gh-dearest-plotveil/"
+        },
+        {
+          "name": "Sedum",
+          "url": "https://github.com/sedum-dev/sedum",
+          "description_markdown": "Experimental Playwright test tool: in goal mode one Jev Choice per turn picks the next operation (click, type, done or blocked) and its target among the page's elements, authored plain-English steps use a Choice to resolve each element, and a test passes only when a separate authored verify claim clears two Jev Nouls (holds, contradicted) against configurable thresholds. It sends step sentences, bounded element descriptions and page text to TypeSafe or a compatible endpoint you configure (opt-in vision sends screenshots), and its docs note that the scores are not yet calibrated against real pass rates.",
+          "permalink": "/projects/gh-sedum-dev-sedum/"
         },
         {
           "name": "unclutter",
@@ -1380,7 +1392,7 @@
         {
           "name": "RSI-Jev",
           "url": "https://github.com/Shanghua-Gao/RSI-Jev",
-          "description_markdown": "Jev-like 2B open model trained by a recursively self-improving AI research system, with published version notes including failed experiments (MIT code, Apache-2.0 weights); it returns `choice`, `score`, and `noul` probabilities through a `/v1/systemone`-compatible server. Its authors report 0.791 on typed-decisions after training on that benchmark's train split and 0.774 on 873 held-out scienthoon tickets; MMLU-Pro remains a weakness at 0.383 on a 1,000-question subset.",
+          "description_markdown": "Jev-like 2B open model trained by a recursively self-improving AI research system, with published version notes including failed experiments (MIT code, Apache-2.0 weights); it returns `choice`, `score`, and `noul` probabilities about text or, since v4.0-VL, up to four images through a `/v1/systemone`-compatible server. Its authors report 86.6 AUROC zero-shot on 2,162 VisA inspection photos; one model and seed were tested, documents over 2,048 tokens lose their beginning, and it rarely picks an \"unknown\" option.",
           "permalink": "/projects/gh-shanghua-gao-rsi-jev/"
         },
         {
@@ -1426,6 +1438,12 @@
           "permalink": "/projects/gh-manavarya09-verdict/"
         },
         {
+          "name": "Vev",
+          "url": "https://github.com/Xiaooolong/vev",
+          "description_markdown": "Independent Jev-style decision server with vision input, fine-tuned from Qwen3.5 4B and 9B, that answers Choice, Score, and Noul questions about text, JSON, and images, with screenshots or photos placed directly in `state`, through a `/v1/systemone`-compatible server; the repository has Apache-2.0 code and per-set results on public text and image judgment sets, requests are processed on your own GPU after the weights download from Hugging Face, and the weights are CC BY-NC 4.0, for non-commercial use only.",
+          "permalink": "/projects/gh-xiaooolong-vev/"
+        },
+        {
           "name": "Von",
           "url": "https://github.com/wfzyx/von",
           "description_markdown": "Open local Choice, Noul, and Score model with public weights, training code, and a System One-shaped API. Benchmark comparisons are author-reported: its README gives a 91.23% accuracy headline without a matching result artifact in the repo, while its 49-task table reports 71.5% macro accuracy.",
@@ -1448,9 +1466,15 @@
     {
       "id": "showcases-and-field-notes",
       "name": "Showcases and field notes",
-      "description": "Short demos and builder reports show what was tried and observed. Treat reported numbers as starting points for your own tests.",
+      "description": "Short demos, guides, and builder reports show what was tried and observed. Treat reported numbers as starting points for your own tests.",
       "permalink": "/categories/showcases-and-field-notes/",
       "resources": [
+        {
+          "name": "awesome-jev-prompts",
+          "url": "https://github.com/vicfei/awesome-jev-prompts",
+          "description_markdown": "Independent bilingual (English/Chinese) CC0 catalog of 43 Jev Choice, Score, and Noul question-design patterns plus 10 anti-patterns, with templates, sources, threshold notes, and failure modes; examples and thresholds still need evaluation on your own data.",
+          "permalink": "/projects/gh-vicfei-awesome-jev-prompts/"
+        },
         {
           "name": "Browser Use + Jev",
           "url": "https://x.com/gregpr07/status/2100411066966749359",
