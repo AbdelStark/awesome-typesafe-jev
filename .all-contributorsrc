@@ -1165,6 +1165,24 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "SamratDuttaOfficial",
+      "name": "Samrat Dutta",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41472530?v=4",
+      "profile": "https://www.linkedin.com/in/samratduttaofficial",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "qybaihe",
+      "name": "qybaihe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/137127051?v=4",
+      "profile": "https://github.com/qybaihe",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-9de3bc.svg?style=flat-square)](#contributors)",
