@@ -560,6 +560,7 @@ Independent tests and open decision-model alternatives provide methods and resul
 
 Short demos, guides, and builder reports show what was tried and observed. Treat reported numbers as starting points for your own tests.
 
+- [A SQL WHERE Clause for Taste](https://query.farm/blog/a-where-clause-for-taste/) — Worked DuckDB/VGI example ranking Hacker News stories with Jev Noul judgments, including SQL, result distributions, and token usage; story titles and URLs are sent to TypeSafe, and the reported timing and cost describe one run rather than an accuracy evaluation.
 - [awesome-jev-prompts](https://github.com/vicfei/awesome-jev-prompts) — Independent bilingual (English/Chinese) CC0 catalog of 43 Jev Choice, Score, and Noul question-design patterns plus 10 anti-patterns, with templates, sources, threshold notes, and failure modes; examples and thresholds still need evaluation on your own data.
 
 - [Browser Use + Jev](https://x.com/gregpr07/status/2100411066966749359) — Gregor Zunic's real-time flight-search demo and short description of the dynamic DOM action space.
