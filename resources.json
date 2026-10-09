@@ -2,7 +2,7 @@
   "schema_version": 2,
   "source": "https://github.com/AbdelStark/awesome-typesafe-jev/blob/main/README.md",
   "last_updated": "2026-09-23",
-  "total_resources": 252,
+  "total_resources": 257,
   "notice": "Community entries are independent unless their source says otherwise. Inclusion is not endorsement.",
   "categories": [
     {
@@ -34,6 +34,12 @@
           "url": "https://github.com/prasanthj/duckdb-jev",
           "description_markdown": "Native DuckDB extension for Jev predicates, Choice classification, Score rubrics, and streaming batched judgments over SQL rows, with per-query budgets, caching, and request telemetry; published live throughput uses a repeated synthetic ticket corpus and does not measure classification accuracy, and binaries must match the DuckDB version and platform.",
           "permalink": "/projects/gh-prasanthj-duckdb-jev/"
+        },
+        {
+          "name": "grounded-ai",
+          "url": "https://github.com/grounded-ai/grounded_ai",
+          "description_markdown": "MIT Python evaluation library whose `JevEvaluator` asks hosted Jev or a local Strands Decider Noul, Choice, and Score questions, and whose `CascadeEvaluator` keeps confident answers and sends the rest to an LLM judge (OpenAI, Anthropic, Bedrock, or Hugging Face). Hosted mode sends inputs to TypeSafe; escalated questions go to the judge's provider even when the first judge is local. Its [tool-call benchmark](https://github.com/grounded-ai/grounded_ai/tree/main/benchmarks/tool_call) has 200 items labelled by another model's choices.",
+          "permalink": "/projects/gh-grounded-ai-grounded-ai/"
         },
         {
           "name": "Hunch",
@@ -94,6 +100,12 @@
           "url": "https://github.com/kylemclaren/jevsearch",
           "description_markdown": "shadcn/ui registry block for ⌘K site search: a local keyword pass streams hits on the first keystroke, then the top 20 go to Jev in one request (a Noul per page, a Choice for the single best answer, and a Noul for whether any page answers) and code re-orders or drops them; with no embeddings or vector database it only re-ranks what the keyword pass retrieves, and keyword order stands if TypeSafe is slow or down.",
           "permalink": "/projects/gh-kylemclaren-jevsearch/"
+        },
+        {
+          "name": "Jevstiller",
+          "url": "https://github.com/tomerglick57/Jevstiller",
+          "description_markdown": "Apache-licensed self-hosted proxy for repeated Jev Choice and Noul calls: point `TYPESAFE_BASE_URL` at it, and it trains a small local head on Jev's own answers and answers locally only within a target agreement checked by a Clopper–Pearson bound and a permanent audit slice. Callers' keys are forwarded and never stored; request text is kept locally for training unless disabled. Score questions are forwarded, while the default local encoder sees only the first 256 tokens of a state, limiting coverage on long inputs.",
+          "permalink": "/projects/gh-tomerglick57-jevstiller/"
         },
         {
           "name": "json-render",
@@ -590,6 +602,12 @@
           "permalink": "/projects/gh-deyna256-langchain-loadout/"
         },
         {
+          "name": "mintocode",
+          "url": "https://github.com/Spearmintai/mintocode",
+          "description_markdown": "Context compiler for Claude Code, Codex, OpenCode, and ZCode that compiles a repository once and sends the agent only the code paragraphs a question needs, with optional Jev Noul judgments (\"is this paragraph needed?\") over candidate paragraphs; enabling Jev sends the question and up to 4,000 characters of each candidate's text to TypeSafe, and the Jev path is implemented but not yet benchmarked, so the project's published results use other selectors.",
+          "permalink": "/projects/gh-spearmintai-mintocode/"
+        },
+        {
           "name": "Mobile Jev",
           "url": "https://github.com/droidrun/mobile-jev",
           "description_markdown": "Local Android agent and studio using Mobilerun: Jev selects operations and observed targets, code rejects stale actions, and the included dark-theme demo checks the resulting switch; it needs a device plus Mobilerun and TypeSafe keys, while CI tests do not control a live phone.",
@@ -845,6 +863,12 @@
       "description": "End-user apps and workflow prototypes show where typed decisions can help with real tasks. Their source availability, evaluation depth, and data paths vary.",
       "permalink": "/categories/applications-and-workflows/",
       "resources": [
+        {
+          "name": "AI Slop Detector",
+          "url": "https://madewithjev.com/free-tools/ai-slop-detector",
+          "description_markdown": "Free web tool: headless Chrome measures a page's rendered styles, a vision model describes the screenshot, and Jev answers 35 yes/no questions in one call (one per tell, plus one for the whole page) to produce a slop score; closed source, 2 free scans a day, reports are public.",
+          "permalink": "/projects/site-madewithjev-com-free-tools-ai-slop-detector/"
+        },
         {
           "name": "BTK audit studies",
           "url": "https://boringtoolskit.com/blog/seo-audit-cost-2026/",
@@ -1398,7 +1422,7 @@
         {
           "name": "RSI-Jev",
           "url": "https://github.com/Shanghua-Gao/RSI-Jev",
-          "description_markdown": "Jev-like 2B open model trained by a recursively self-improving AI research system, with published version notes including failed experiments (MIT code, Apache-2.0 weights); it returns `choice`, `score`, and `noul` probabilities about text or, since v4.0-VL, up to four images through a `/v1/systemone`-compatible server. Its authors report 86.6 AUROC zero-shot on 2,162 VisA inspection photos; one model and seed were tested, documents over 2,048 tokens lose their beginning, and it rarely picks an \"unknown\" option.",
+          "description_markdown": "Jev-like 4B and 27B open models (v6.1-VL) from a self-improving research loop with published version notes and failed-experiment summaries (MIT code, Apache-2.0 weights; some training-source rights unclear); they return `choice`, `score`, and `noul` probabilities about text and images in one forward pass through a `/v1/systemone`-compatible server, with `auto` effort choosing depth per question. The authors report 50.98 (4B, pre-release kit) and 65.64 (27B, `auto`) on Decision Index 0.3's public set, with an official full score pending; the 27B was selected using that benchmark, needs a 96 GB GPU in bf16, and its training corpora are not public.",
           "permalink": "/projects/gh-shanghua-gao-rsi-jev/"
         },
         {
@@ -1481,6 +1505,12 @@
       "description": "Short demos, guides, and builder reports show what was tried and observed. Treat reported numbers as starting points for your own tests.",
       "permalink": "/categories/showcases-and-field-notes/",
       "resources": [
+        {
+          "name": "A SQL WHERE Clause for Taste",
+          "url": "https://query.farm/blog/a-where-clause-for-taste/",
+          "description_markdown": "Worked DuckDB/VGI example ranking Hacker News stories with Jev Noul judgments, including SQL, result distributions, and token usage; story titles and URLs are sent to TypeSafe, and the reported timing and cost describe one run rather than an accuracy evaluation.",
+          "permalink": "/projects/site-query-farm-blog-a-where-clause-for-taste/"
+        },
         {
           "name": "awesome-jev-prompts",
           "url": "https://github.com/vicfei/awesome-jev-prompts",
