@@ -1219,6 +1219,24 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "lucaminudel",
+      "name": "Luca Minudel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/467256?v=4",
+      "profile": "https://github.com/lucaminudel",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "robertn702",
+      "name": "Robert",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8119609?v=4",
+      "profile": "https://www.robertniimi.com/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-9de3bc.svg?style=flat-square)](#contributors)",
