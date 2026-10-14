@@ -2,7 +2,7 @@
   "schema_version": 2,
   "source": "https://github.com/AbdelStark/awesome-typesafe-jev/blob/main/README.md",
   "last_updated": "2026-09-23",
-  "total_resources": 259,
+  "total_resources": 262,
   "notice": "Community entries are independent unless their source says otherwise. Inclusion is not endorsement.",
   "categories": [
     {
@@ -888,6 +888,12 @@
           "permalink": "/projects/site-boringtoolskit-com-blog-seo-audit-cost-2026/"
         },
         {
+          "name": "Cue",
+          "url": "https://github.com/murtazox04/Cue",
+          "description_markdown": "MIT self-hosted notification service whose optional, off-by-default experimental Jev screening checks urgency, pressure, deception, and exposed credentials before delivery, then code can hold a message for approval or lower its importance; when enabled, TypeSafe receives sender details, category, claimed importance, and rendered message variants including title, body, HTML text and links, image and action URLs, and push data, while Cue preference and review credentials are masked.",
+          "permalink": "/projects/gh-murtazox04-cue/"
+        },
+        {
           "name": "discoprint",
           "url": "https://github.com/lirantal/discoprint",
           "description_markdown": "CLI that fetches an artist's discography and available lyrics, asks Jev five typed questions per song about theme, mood, complexity, explicit content, and perspective, then draws a terminal dashboard; full lyrics go to TypeSafe, missing lyrics are skipped, and the classifications are model judgments rather than verified music metadata.",
@@ -920,7 +926,7 @@
         {
           "name": "Jev Chat Assistant",
           "url": "https://github.com/jev-chat/jev-chat-jarvis",
-          "description_markdown": "Android overlay that reads visible WeChat, QQ, and X conversations through accessibility, asks Jev for typed intent and action judgments, has a text model draft three replies, and can fill a selected reply without sending it; device tests are author-reported, Lark capture is partial, and chat content goes to the configured model APIs.",
+          "description_markdown": "Android overlay that reads visible QQ and X conversations through accessibility, Feishu/Lark text through on-device OCR, and WhatsApp one-to-one chats (validated only against recordings), asks Jev for typed intent, danger, and next-action judgments, has a separate text model draft three replies that Jev ranks, and fills a selected reply without sending it; other device tests are author-reported, and chat content goes to the configured model APIs.",
           "permalink": "/projects/gh-finderchangchang-jev-chat-jarvis/"
         },
         {
@@ -1179,6 +1185,12 @@
       "description": "Independent tests and open decision-model alternatives provide methods and results to inspect. Compare task data, calibration, and costs before carrying a result into your own workflow.",
       "permalink": "/categories/evaluations-and-independent-research/",
       "resources": [
+        {
+          "name": "Artemis Edge decision models",
+          "url": "https://huggingface.co/collections/turintech/artemis-edge-decision-models-6accea74eb7016a886f25fdb",
+          "description_markdown": "Apache-2.0 GGUF builds of Clef, Clef-Flash, pplx-decider, Kev, and d3 for local `/v1/systemone` inference on compatible recent llama.cpp, with no request data leaving the machine; model cards report agreement with BF16 originals on 2,000 decisions, held-out results, and public-quantization comparisons, while their recommended files disagree with the originals on about 2 to 8% of test decisions and smaller variants can differ more.",
+          "permalink": "/projects/site-huggingface-co-collections-turintech-artemis-edge-decision-models-6accea74eb7016a886f25fdb/"
+        },
         {
           "name": "Awesome Jev Robustness",
           "url": "https://github.com/Yifan-Lan/awesome-jev-robustness",
@@ -1564,6 +1576,12 @@
           "url": "https://github.com/replynodes/jev-web-analyzer",
           "description_markdown": "Inspectable Next.js demo that fetches public webpage Markdown, sends bounded state to Jev through Vercel's hosted Gateway, and exposes Boolean, Choice, Score, probability, and streaming results; live analysis requires both configured credentials.",
           "permalink": "/projects/gh-replynodes-jev-web-analyzer/"
+        },
+        {
+          "name": "Jev with OpenCode",
+          "url": "https://maxpertise.net/blog/how-to-use-jev-with-opencode",
+          "description_markdown": "Independent guide contrasting TypeSafe's Jev-writing skill with community MCP and direct action-gate paths for OpenCode, including their different keys and configuration; Jev is not the coding model, the running tools send judged state or action context to their configured endpoint (the direct gate defaults to an unaffiliated hosted gateway), and that gate fails open on errors.",
+          "permalink": "/projects/site-maxpertise-net-blog-how-to-use-jev-with-opencode/"
         },
         {
           "name": "jev-agent-skill",
