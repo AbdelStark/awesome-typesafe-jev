@@ -1237,6 +1237,42 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Latifox",
+      "name": "Latif Abderrahmane",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38840620?v=4",
+      "profile": "https://github.com/Latifox",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Finderchangchang",
+      "name": "柳伟杰",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7477876?v=4",
+      "profile": "https://github.com/Finderchangchang",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "murtazox04",
+      "name": "Murtazo Xurramov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84270355?v=4",
+      "profile": "https://github.com/murtazox04",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "mike-turintech",
+      "name": "mike",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39063587?v=4",
+      "profile": "https://github.com/mike-turintech",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-9de3bc.svg?style=flat-square)](#contributors)",
