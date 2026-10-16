@@ -1273,6 +1273,33 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Eve2512",
+      "name": "Eva",
+      "avatar_url": "https://avatars.githubusercontent.com/u/237053257?v=4",
+      "profile": "https://github.com/Eve2512",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "zyuhan1999",
+      "name": "Yuhan Zhu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60695081?v=4",
+      "profile": "https://github.com/zyuhan1999",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "fatsopanda-v3",
+      "name": "fatsopanda-v3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/252178024?v=4",
+      "profile": "https://github.com/fatsopanda-v3",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-9de3bc.svg?style=flat-square)](#contributors)",
