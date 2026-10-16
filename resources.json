@@ -2,7 +2,7 @@
   "schema_version": 2,
   "source": "https://github.com/AbdelStark/awesome-typesafe-jev/blob/main/README.md",
   "last_updated": "2026-09-23",
-  "total_resources": 262,
+  "total_resources": 265,
   "notice": "Community entries are independent unless their source says otherwise. Inclusion is not endorsement.",
   "categories": [
     {
@@ -728,6 +728,12 @@
           "permalink": "/projects/gh-danrwilloughby-snifftest/"
         },
         {
+          "name": "strayguard",
+          "url": "https://github.com/Eve2512/Strayguard",
+          "description_markdown": "Pre-commit hook that uses Jev Choice to flag scratch files, output dumps, build output, and local-only files; sends new-file paths, sizes, nearby tracked names, and up to 40 lines of eligible text to TypeSafe. Local rules suppress contents for matched secret-file paths, but unmatched text may contain secrets; on API failure or without a key, it falls back to local rules, and non-interactive warnings do not block unless strict mode is enabled.",
+          "permalink": "/projects/gh-eve2512-strayguard/"
+        },
+        {
           "name": "Supercov",
           "url": "https://github.com/supercorp-ai/supercov",
           "description_markdown": "Code quality for coding agents: Jev scores each source file so the agent knows what to fix first.",
@@ -741,9 +747,9 @@
         },
         {
           "name": "System One-assisted compaction",
-          "url": "https://github.com/ljedrz/nachalnik/blob/master/kamchatka/examples/system1_assisted_compaction.rs",
-          "description_markdown": "Rust example that asks a configured OpenRouter decision model to score which tool outputs are worth keeping during context compaction; it compares the ordering with an age-based policy on a synthetic session, not a live-agent outcome.",
-          "permalink": "/projects/gh-ljedrz-nachalnik-blob-master-kamchatka-examples-system1-assisted-compaction-rs/"
+          "url": "https://github.com/ljedrz/nachalnik/blob/830d2706ea598112403424f076d7845893098f74/kamchatka/examples/system1_assisted_compaction.rs",
+          "description_markdown": "Archived Rust example that asks a configured OpenRouter decision model to score which tool outputs are worth keeping during context compaction; it compares the ordering with an age-based policy on a synthetic session, not a live-agent outcome.",
+          "permalink": "/projects/gh-ljedrz-nachalnik-blob-830d2706ea598112403424f076d7845893098f74-kamchatka-examples-system1-assisted-compaction-rs/"
         },
         {
           "name": "toolgate",
@@ -1228,6 +1234,12 @@
           "permalink": "/projects/gh-hanno-labs-decision-bench/"
         },
         {
+          "name": "Dwight 4B",
+          "url": "https://huggingface.co/zime-ai/dwight-4b",
+          "description_markdown": "Apache-2.0 open-weight Qwen3-4B fine-tune for sales call transcripts that answers one yes/no, Choice, or 0-10 Score question as a single option token with a probability per option, and also writes JSON insights with verbatim quotes; runs self-hosted (vLLM or GGUF), so no call data leaves your machine; a separate Jev-style alternative, not hosted Jev, trained on English B2B software calls and weaker on companies unlike its training data.",
+          "permalink": "/projects/site-huggingface-co-zime-ai-dwight-4b/"
+        },
+        {
           "name": "Janus",
           "url": "https://github.com/FirasSX914/Janus",
           "description_markdown": "Independent calibration measurement of Jev on two labelled datasets, Banking77 and Web of Science, with a Jev to frontier cascade priced per row from measured tokens, now also packaged as an installable tool (`pip install janus-decide`) that measures a threshold on your own data and ships none by default; the protocol was frozen before any result and the raw JSONL and figures are committed, and no routing parameter transferred between the two datasets, as the optimal threshold, the sign of the accuracy gap between the two models, and whether routing paid for itself all changed; the Web of Science labels come from publication metadata rather than per-document annotation, so part of the error measured there is label ambiguity.",
@@ -1496,6 +1508,12 @@
           "url": "https://github.com/Xiaooolong/vev",
           "description_markdown": "Independent Jev-style decision server with vision input, fine-tuned from Qwen3.5 4B and 9B, that answers Choice, Score, and Noul questions about text, JSON, and images, with screenshots or photos placed directly in `state`, through a `/v1/systemone`-compatible server; the repository has Apache-2.0 code and per-set results on public text and image judgment sets, requests are processed on your own GPU after the weights download from Hugging Face, and the weights are CC BY-NC 4.0, for non-commercial use only.",
           "permalink": "/projects/gh-xiaooolong-vev/"
+        },
+        {
+          "name": "VideoJev",
+          "url": "https://github.com/MCG-NJU/VideoJev",
+          "description_markdown": "Apache-2.0 open System One video models that locally score temporal candidates and multiple-choice answers over a shared prefix without text generation; video inference requires no hosted API, and the models use their own task interface rather than a TypeSafe-compatible endpoint.",
+          "permalink": "/projects/gh-mcg-nju-videojev/"
         },
         {
           "name": "Von",
