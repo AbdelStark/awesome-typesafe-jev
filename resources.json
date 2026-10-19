@@ -2,7 +2,7 @@
   "schema_version": 2,
   "source": "https://github.com/AbdelStark/awesome-typesafe-jev/blob/main/README.md",
   "last_updated": "2026-09-23",
-  "total_resources": 265,
+  "total_resources": 268,
   "notice": "Community entries are independent unless their source says otherwise. Inclusion is not endorsement.",
   "categories": [
     {
@@ -1228,10 +1228,22 @@
           "permalink": "/projects/site-convex-dev-evals-decision/"
         },
         {
+          "name": "Decision Models as Guardrails",
+          "url": "https://dm-as-guardrails.raxitlabs.com",
+          "description_markdown": "raxIT Labs benchmark of Jev 1.13.0 and 1.14.0, 16 other decision models, and Amazon Bedrock Guardrails on the same 9,975 labelled guardrail checks (content, direct and indirect prompt attacks, denied topics, profanity, PII, and grounding); each check is a typed yes/no question blocked at one fixed 0.5 threshold, scored on balanced accuracy with 95% bootstrap intervals and USD per 1,000 checks at list price, and version 1.0.0 reports 88.7 for Jev 1.14.0, 90.4 for the Perplexity Decisions API, and 79.0 for Bedrock Guardrails. Per-row results, the scoring contract, and run scripts are public; the code is Apache-2.0, a 2,269-row contamination-check slice is held back, reproducing sends the rows to each paid provider, no model gets a calibrated threshold, and raxIT Labs built and ran the benchmark itself.",
+          "permalink": "/projects/site-dm-as-guardrails-raxitlabs-com/"
+        },
+        {
           "name": "DecisionBench",
           "url": "https://github.com/Hanno-Labs/decision-bench",
           "description_markdown": "Open benchmark runtime for document-grounded decision models, with pinned tasks and a native OpenRouter adapter for Jev.",
           "permalink": "/projects/gh-hanno-labs-decision-bench/"
+        },
+        {
+          "name": "Drex v2.0",
+          "url": "https://huggingface.co/nace-ai/drex-v2.0",
+          "description_markdown": "Open-weight decision model from Nace.AI on Qwen3.6-35B-A3B (MoE, about 3B active per token) with a Kev pointer head that answers the same `POST /v1/systemone` Choice, Noul, and Score shape with states up to 131,072 tokens, self-hosted through Nace's llama.cpp or Ollama forks or through Nace's hosted API; the weights use the custom Nace.AI Open RAIL-M license, and its published scores are self-reported.",
+          "permalink": "/projects/site-huggingface-co-nace-ai-drex-v2-0/"
         },
         {
           "name": "Dwight 4B",
@@ -1358,6 +1370,12 @@
           "url": "https://github.com/fstandhartinger/jevbench",
           "description_markdown": "Independent cross-model benchmark for typed decisions with 534 frozen cases per complete entrant, source adapters, scoring code, public per-task outcomes, and aggregate result artifacts. Its four-axis score includes accuracy, calibration, latency, and cost; some self-hosted latency is adjusted by assumption, hosting costs can be estimates, and withheld cases are exposed to the services being measured.",
           "permalink": "/projects/gh-fstandhartinger-jevbench/"
+        },
+        {
+          "name": "JevGPT",
+          "url": "https://github.com/sunyasheng/JevGPT",
+          "description_markdown": "Apache-2.0 code and per-item run records for the paper [JevGPT: Thinking Fast and Slow in Autonomous Research](https://arxiv.org/abs/2610.18272), a research agent in which GPT-5.5 plans searches and writes answers while, in BrowseComp-Plus question answering, jev-1.13.0 answers parallel Choice questions that locate answer lines and Noul questions that check whether each retrieved document region addresses the request, with code returning the original passages to GPT; the authors report 90.48% accuracy on 830 BrowseComp-Plus questions and 0.5390 nDCG@20 on 105 NeuCLIRBench topics, the released records rebuild those rows without model calls, and live runs need GPT-provider credentials, a TypeSafe key and benchmark indexes; evidence queries and source regions go to TypeSafe, and research questions and selected original passages go to the configured GPT provider.",
+          "permalink": "/projects/gh-sunyasheng-jevgpt/"
         },
         {
           "name": "jevmlx",
