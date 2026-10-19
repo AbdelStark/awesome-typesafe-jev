@@ -1300,6 +1300,33 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "agairola",
+      "name": "Adesh Gairola",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16770959?v=4",
+      "profile": "https://adeshgairola.com/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "sunyasheng",
+      "name": "sunyasheng",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22748186?v=4",
+      "profile": "https://github.com/sunyasheng",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "intellightkz",
+      "name": "intellightkz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/220337168?v=4",
+      "profile": "https://github.com/intellightkz",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-9de3bc.svg?style=flat-square)](#contributors)",
