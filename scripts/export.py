@@ -29,6 +29,7 @@ PERMALINK_OVERRIDES = {
     # The repository moved; keep previously shared project pages and cards live.
     "https://github.com/jev-chat/jev-chat-jarvis": "gh-finderchangchang-jev-chat-jarvis",
     "https://github.com/deyna256/langchain-skill-router": "gh-deyna256-langchain-loadout",
+    "https://huggingface.co/collections/turintech/compressed-decision-models-6accea74eb7016a886f25fdb": "site-huggingface-co-collections-turintech-artemis-edge-decision-models-6accea74eb7016a886f25fdb",
 }
 
 
